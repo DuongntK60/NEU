@@ -34,6 +34,11 @@
             position: relative;
         }
 
+        @keyframes fade-color{
+            from{background-color: #8B1E3F;}
+            to{background-color: #DB4C40;}
+        }
+
         #menu-top>ul>li>ul{
             width: 170px;
             height: auto;
@@ -55,11 +60,6 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             animation-name: fade-color;
             animation-duration: 0.35s;
-        }
-
-        @keyframes fade-color{
-            from{background-color: #8B1E3F;}
-            to{background-color: #DB4C40;}
         }
 
         #menu-top>ul>li>ul>li>a{
@@ -113,51 +113,35 @@
             margin-top: 10px;
         }
 
-        #main #left{
-            width: 700px;
-            min-height: 400px;
-            float: left;
-        }
-
-        #main #left ul{
-            margin: 0;
-            padding: 0;
-        }
-
-        #main #left ul li{
-            list-style-type: none;
-            border-bottom: 1px solid #ccc;
-            float: left;
-            clear: left;
-            margin-bottom: 10px;
-        }
-
-        #main #left ul li img{
-            margin-right: 10px;
-            width: 25%;
-            height: 25%;
-            float: left;
-            margin: 10px 10px 10px 0;
-        }
-
-        #main #left ul li h2{
-            font-size: 16px;
-            margin-top: 22px;
-        }
-
-        #main #left ul li h2 a{
-            text-decoration: none;
-            color: black;
-        }
-
-        #main #left ul li h2 a:hover{
-            color: #DB4C40;
-        }
-
         #main #right{
             width: 300px;
             min-height: 400px;
+            float: right;
+        }
+
+        #main #left span{
+            font-weight: normal;
+            font-size: 22px;
+        }
+
+        #main #left{
+            width: 700px;
+            height: auto;
             float: left;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+
+        #main #left img{
+            width: 690px;
+            padding-right: 5px;
+        }
+        #main #left p{
+            font-size: 16.5px;
+        }
+
+        #main #left ul{
+            font-size: 16.5px;
         }
 
         #footer{
@@ -166,8 +150,8 @@
             text-align: center;
             height: auto;
             color: white;
-            clear: left;
-            
+            clear: right;
+            float: right;
         }
 
         #main #right .menu-right ul{
@@ -208,7 +192,6 @@
             line-height: 40px;
             color: white;
         }
-
         #main #right .menu-right1 ul{
             margin: -15px 0 0 0;
             padding: 0;
@@ -413,14 +396,16 @@
                     <li><a href="">Chuyên mục Thị trường</a></li>
                     <li><a href="">Danh bạ Thị trường</a></li>
                     <li><a href="">Danh bạ Ngành hàng</a></li>
-                </ul></li>
+                </ul>
+            </li>
             <li><a href="#" tittle="Kiến thức">Kiến thức</a>
                 <ul>
                     <li><a href="">Chuyên mục Kiến thức</a></li>
                     <li><a href="">Passport to Marketing</a></li>
                     <li><a href="">Viral Marketing</a></li>
                     <li><a href="">Từ khóa Chuyên môn</a></li>
-                </ul></li>
+                </ul>
+            </li>
             <li><a href="#" tittle="Quan điểm">Quan điểm</a></li>
             <li><a href="#" tittle="Cộng đồng">Cộng đồng</a></li>
             <li><a href="#" tittle="Campaign">Campaign</a></li>
@@ -435,40 +420,42 @@
     
     <div id="main">
         <div id="left">
-            <ul>
-                <li>
-                    <img src="/Marketing 24h/bài số 1.jpg" alt="">
-                    <h2><a href="">Nghía Social #1: Lazada sáng nhất phố với biển quảng cáo 3D, Heineken trở lại thông minh với Trò chơi con mực</a></h2>
-                    Mạng xã hội là một sân chơi đầy sôi động cho các nhãn hàng, agency thoả sức sáng tạo và tương tác trực tiếp với người dùng của mình. Cùng “nghía” một vòng mạng xã hội hai tuần đầu của tháng 10 có gì hot và thú vị?
-                </li>
-                <li>
-                    <img src="/Marketing 24h/bài số 2.jpg" alt="">
-                    <h2><a href="">Nỗ lực “bình thường mới” của hệ sinh thái khởi nghiệp</a></h2>
-                    Việc dịch chuyển các chương trình tăng tốc khởi nghiệp tập trung vào kỹ năng mềm lên nền tảng số sẽ giúp startup xây dựng hành trang vững vàng trước thách thức hậu đại dịch.
-                </li>
-                <li>
-                    <img src="/Marketing 24h/bài số 3.jpg" alt="">
-                    <h2><a href="/Bài tập lớn_20102021_Trang con.html">Novaon BizVac Series: Webinar về thương mại điện tử quy tụ hơn 200 C-Levels của các nhãn hàng lớn</a></h2>
-                    Với kinh nghiệm 15 năm triển khai Marketing cho hơn 1.000 doanh nghiệp trên kênh thương mại điện tử, Novaon tổ chức sự kiện “Kinh nghiệm triển khai e-Commerce Marketing cho các nhãn hàng lớn” diễn ra vào ngày 21/10 này.
-                </li>
-                <li>
-                    <img src="/Marketing 24h/bài số 4.jpg" alt="">
-                    <h2><a href="">Fashion Marketing #15: “Kho báu Gucci” – Nơi lưu trữ những ý tưởng táo bạo về thời trang vintage</a></h2>
-                    Trong số này tôi muốn chia sẻ ý tưởng làm mới các sản phẩm vintage của thương hiệu Gucci qua bài viết của Luke Leitch đăng trên Vogue ngày 25/9/2021 và bài phỏng vấn với bạn Nguyên Đặng, founder của Shinesium, về mô hình này tại Việt Nam.
-                </li>
-                <li>
-                    <img src="/Marketing 24h/bài số 5.jpg" alt="">
-                    <h2><a href="">Get your agency dream job: Ogilvy & Mather Vietnam</a></h2>
-                    Tôi xin được chia sẻ với các bạn những tư liệu mà tôi thu thập được về các công ty lớn trong ngành Creative Communications, nhằm mang đến một cái nhìn rõ ràng hơn về họ, triết lý, văn hóa và các chiến dịch mà họ thực hiện. Tôi hy vọng rằng loạt bài này sẽ giúp cho các bạn có thêm thông tin, vững lòng trong các cuộc phỏng vấn.
-                </li>
-                <li>
-                    <img src="/Marketing 24h/bài số 6.jpg" alt="">
-                    <h2><a href="">Bảng quảng cáo di động của Durex khuyến khích mọi người tiêm vắc xin</a></h2>
-                    Mới đây, Durex Australia đã triển khai một chiến dịch quảng cáo ngoài trời tương tác nhằm nhắc nhở mọi người về việc tiêm phòng đầy đủ vắc xin, bảo vệ bản thân trong diễn biến dịch bệnh COVID-19 phức tạp như hiện nay.
-                </li>
-            </ul>
-        </div>
+            <h1>Novaon BizVac Series: Webinar về thương mại điện tử quy tụ hơn 200 C-Levels của các nhãn hàng lớn</h1>
+            <span>Với kinh nghiệm 15 năm triển khai Marketing cho hơn 1.000 doanh nghiệp trên kênh thương mại điện tử, Novaon tổ chức sự kiện “Kinh nghiệm triển khai e-Commerce Marketing cho các nhãn hàng lớn” diễn ra vào ngày 21/10 này.</span>
+            <h3>Rào cản khi doanh nghiệp tham gia thương mại điện tử</h3>
+            <p>Thương mại điện tử được đánh giá là một kênh tiềm năng. Nhưng tận dụng sức mạnh khi gia nhập thương mại điện tử (TMĐT) thế nào, không phải doanh nghiệp nào cũng biết và làm tốt. Có những sai lầm khiến doanh nghiệp trả giá bằng tiền bạc và thời gian, hoặc hơn thế nữa. Đứng trong bối cảnh sau đại dịch, khi nền kinh tế kiệt quệ, có những dấu hiệu gồng gánh, không phải doanh nghiệp nào cũng còn đủ tiềm lực và kiên nhẫn để “thử và sai”. Vì thế, những giải pháp đi nhanh, những lối tắt với chủ đề này là lựa chọn ưu tiên.</p>
+            <p>Theo quan sát của đơn vị tư vấn như Novaon, khi tham gia TMĐT, ngoài trường hợp làm tốt, doanh nghiệp rơi vào một trong các trạng thái sau:</p>
+                <ul>
+                    <li>Doanh nghiệp mới triển khai, còn nhiều bỡ ngỡ</li>
+                    <li>Đang triển khai marketing trên kênh TMĐT nhưng cầm chừng, tiềm năng thấp</li>
+                    <li>Đã chạy tốt nhưng đang có dấu hiệu bão hoà hoặc phụ thuộc</li>
+                </ul>
+            <p>Thường thì doanh nghiệp sẽ va vào tình huống từ 1 đến 3, vấn đề sẽ được giải quyết khi: doanh nghiệp không ngại “thử và sai” liên tục để rút ra kinh nghiệm, hoặc kiên nhẫn học hỏi từ những doanh nghiệp đã có kinh nghiệm.</p>
+            <p>Thấu hiểu nhu cầu chung, với kinh nghiệm 15 năm triển khai Marketing cho hơn 1.000 doanh nghiệp trên kênh thương mại điện tử, Novaon tổ chức sự kiện “Kinh nghiệm triển khai e-Commerce Marketing cho các nhãn hàng lớn” diễn ra vào ngày 21/10 này. Sự kiện dự kiến quy tụ 200 nhãn hàng có doanh thu năm trên 100 tỉ, với nội dung chương trình thực tế, dàn diễn giả chất lượng đến từ Novaon và Facebook. Sự kiện hứa hẹn cung cấp nhiều insight về e-Commerce của các doanh nghiệp lớn.</p>
+            <img src="/Marketing 24h/ảnh bài viết 1.jpg" alt="">
+            <h3>Agenda sự kiện</h3>
+                <ul>
+                    <li>Phần 1: Các sai lầm thường gặp trong chiến lược e-Commerce – Ông Lê Viết Hải Sơn</li>
+                    <li>Phần 2: Các sai lầm thường gặp trong chiến thuật triển khai của doanh nghiệp – Bà Hoàng Thảo</li>
+                    <li>Phần 3: Bài học đúc rút từ các case study điển hình – Bà Trân Lê</li>
+                    <li>Phần 4: Q&A cùng diễn giả</li>
+                </ul>
+            <img src="/Marketing 24h/ảnh bài viết 2.jpg" alt="">
+            <h3>Dàn diễn giả với kinh nghiệm sâu sắc trong ngành</h3>
+            <h4>1. Ông Lê Viết Hải Sơn – Vice Chairman, Novaon Group</h4>
+            <p>Trước khi đồng hành cùng Novaon, ông Lê Viết Hải Sơn từng kiêm nhiệm nhiều vị trí chủ chốt tại các tập đoàn lớn như Vingroup, Mercedes. Ông hiện đang là người đứng đầu của các thương hiệu thuộc khối Ecom và Novaon Digital – hai đơn vị đã và đang hỗ trợ nhiều doanh nghiệp biến TMĐT thành công cụ đắc lực trong mục tiêu tăng trưởng doanh thu. Trở thành chuyên gia hàng đầu nhờ khả năng chiến lược nhạy bén, ông Sơn sẽ chia sẻ những kinh nghiệm, đặc biệt là các sai lầm thường gặp trong triển khai TMĐT.</p>
+            <h4>2. Bà Trân Lê – Partner Manager tại Facebook Vietnam, Singapore</h4>
+            <p>Bà Trân Lê hiện đang đảm nhiệm vị trí Partner Manager tại Facebook Việt Nam và Singapore. Công tác nhiều năm tại nền tảng mạng xã hội lớn nhất thế giới, bà Trân nắm giữ nhiều insight về e-Commerce. Các “best practice” – chuẩn mực thực hiện và các case study hay trong thực tế cũng là những điều đáng mong chờ trong phần chia sẻ của bà Trân.</p>
+            <h4>3. Bà Hoàng Thảo – COO Novaon Digital</h4>
+            <p>Với trên 12 năm làm việc tại tập đoàn Novaon, bà Hoàng Thảo – Giám đốc Vận hành khối Digital là người có nhiều kinh nghiệm quan sát cách triển khai của đội ngũ Novaon với khách hàng. Theo bà, doanh nghiệp đã có hoạt động thương mại điện tử lâu năm vẫn có thể mắc phải những sai lầm mang tính chiến thuật như kênh, nội dung, ngân sách... Những sai lầm này có ảnh hưởng không nhỏ và không phải doanh nghiệp nào cũng nhìn ra dễ dàng. Nội dung cụ thể sẽ được bà Thảo chia sẻ chi tiết trong webinar.</p>
+            <img src="/Marketing 24h/ảnh bài viết 3.jpg" alt="">
+            <h3>Sự đồng hành của hơn 200 nhãn hàng</h3>
+            <p>Webinar là buổi 2 tiếp nối chuỗi sự kiện “Novaon BizVac Series 2021” được Novaon tổ chức (6/10 - 14/11). Sự kiện có sự tham gia của trên 250 quý khách hàng là C-level của các nhãn hàng lớn như Vinamilk, Evashoes, Phuc Hung Group, Đại Việt Group, Dược Melika, Hasaki, Nutricare, Kawasaki...</p>
+            <p>Về kết quả, sau buổi 1, chuỗi sự kiện đã chứng tỏ được mức độ thực tế và phản hồi hài lòng từ phía khách tham gia, khi trên 200 nhãn hàng đã đồng hành cùng sự kiện tới phút cuối cùng, thậm chí thời lượng sự kiện phải tăng lên… 1 tiếng đồng hồ. Đây là tín hiệu tốt cho thấy “thương hiệu Novaon” trong các sự kiện tổ chức, hứa hẹn một sự kiện chất lượng và “cháy” trong buổi 2 ngày 21/10 này.</p>
+            <p>Hiện tại, sự kiện buổi 2 cũng đã được gần 100 nhãn hàng đăng ký và con số vẫn không ngừng tăng lên.</p>
+            <p>Mời các CEO, CMO, CSO nhanh tay đăng ký, để chúng ta tiếp tục có cơ hội thảo luận về chủ đề e-Commerce giữa tâm bão COVID-19 <a href="">tại đây</a>.</p>
 
+        </div>
         <div id="right">
             <div class="menu-right">
                 <h3>Danh mục</h3>
